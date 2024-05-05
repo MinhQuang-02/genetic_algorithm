@@ -106,7 +106,7 @@ def select_rank_based(population, weight_matrix, num_parents):
     return selected_parents
 
 # Hàm thực thi thuật toán GA cho bài toán TSP
-def genetic_algorithm_tsp(weight_matrix, population_size=300, generations=3000, crossover_rate=0.85, mutation_rate=0.05):
+def genetic_algorithm_tsp(weight_matrix, population_size=300, generations=3000, crossover_rate=0.8, mutation_rate=0.03):
     num_points = len(weight_matrix)
     # Khởi tạo quần thể ban đầu
     population = [create_individual(num_points, 0)] * population_size
